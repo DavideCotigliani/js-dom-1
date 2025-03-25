@@ -1,0 +1,6 @@
+#lampadina.spenta{
+    background-image: url('white_lamp.png');
+}
+#lampadina.accesa{
+    background-image: url('yellow_lamp.png');
+}
