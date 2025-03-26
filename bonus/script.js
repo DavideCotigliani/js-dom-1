@@ -6,14 +6,12 @@ const button = document.getElementById ('btn')
 
 button.addEventListener('click', function (){
     
-        if(lampadina.classList.contains("spenta")){
-            lampadina.classList.remove ("spenta");
-            lampadina.classList.add ("accesa");
-            button.innerHTML = "Spegni"
+        if(lampadina.src.includes("yellow")){
+            lampadina.src = 'white_lamp.png'
+            button.innerHTML = "Accendi"
         }
         else{
-            lampadina.classList.remove("accesa")
-            lampadina.classList.add("spenta")
-            button.innerHTML = "Accendi"
+            lampadina.src= 'yellow_lamp.png'
+            button.innerHTML = "Spegni"
         }
 })
